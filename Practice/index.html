@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- scroll trigger -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .container {
+            background-color: rgb(31, 31, 53);
+            height: 100%;
+            width: 100%;
+            color: white;
+            padding: 3rem;
+            /* gap: 1rem; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .pge1{
+            height: 100%;
+            width: 100%;
+            background-color: gray;
+            /* padding: 2rem; */
+
+            padding: 1rem 2rem ;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+
+            nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: blue;
+                padding: 1rem 2rem;
+                box-shadow: 0 0 10px black;
+                position: fixed;
+                width: 50%;
+                border-radius: 10px;
+            }
+
+            nav ul{
+                display: flex;
+                gap: 1rem;
+
+                li{
+                    list-style: none;
+                    color: white;
+                    cursor: pointer;
+                }
+
+                li:hover{
+                    color: red;
+
+                }
+            }
+
+            button{
+                padding: 10px 20px;
+                border-radius: 10px;
+                border: none;
+                background-color: red;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        .box{
+            background-color: blue;
+            height: 200px;
+            width: 300px;
+            /* margin-top: 1rem; */
+            border-radius: 20px;
+
+            h1{
+                padding: 1rem;
+                text-align: center;
+                text-transform: capitalize;
+                font-weight: 600;
+            }
+
+            p{
+                padding: 10px;
+                
+            }
+        }
+
+        .img{
+            background-color: red;
+            height: 400px;
+            width: 400px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .tab-content{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pge1">
+        <nav id="mainNav">
+            <div>
+
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+                <div>
+
+                    <button type="button">Login</button>
+                </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="img"></div>
+        <div class="tab-content">
+            <div class="box" id="box1">
+                <h1>box1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam recusandae expedita, numquam labore autem odio nostrum necessitatibus molestias quod alias possimus ipsum nemo quo, dolores velit, suscipit cum odit saepe?</p>
+            </div>
+            <div class="box" id="box2">
+                <h1>box2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam recusandae expedita, numquam labore autem odio nostrum necessitatibus molestias quod alias possimus ipsum nemo quo, dolores velit, suscipit cum odit saepe?</p>
+                
+            </div>
+            <div class="box" id="box3">
+                <h1>box3</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam recusandae expedita, numquam labore autem odio nostrum necessitatibus molestias quod alias possimus ipsum nemo quo, dolores velit, suscipit cum odit saepe?</p>
+                
+            </div>
+            <div class="box" id="box4">
+                <h1>box4</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam recusandae expedita, numquam labore autem odio nostrum necessitatibus molestias quod alias possimus ipsum nemo quo, dolores velit, suscipit cum odit saepe?</p>
+
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
