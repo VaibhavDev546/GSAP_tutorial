@@ -4,7 +4,7 @@ import { useGSAP } from '@gsap/react';
 
 const GSAPDemo = () => {
   const gsapRef = useRef();
-  useGSAP(() => {
+  useGSAP(() => {  
     gsap.from(gsapRef.current, {
       rotate: 360,
       scale: 0,
